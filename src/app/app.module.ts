@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
