@@ -8,6 +8,7 @@ import { MaterialModule } from '@angular/material';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { LogrosService } from './services/logros.service';
 import { LogroComponent } from './logro/logro.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LogroComponent } from './logro/logro.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [
     LogrosService
