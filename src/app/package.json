@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "hammerjs": "^2.0.8"
-  },
-  "devDependencies": {
-    "@angular/cli": "^1.0.0"
-  }
-}
