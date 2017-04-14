@@ -1,3 +1,6 @@
+# PWA
+My first Progressive Web App with AngularJS v2
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
