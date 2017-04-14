@@ -8,6 +8,10 @@ import { LogroComponent } from './logro/logro.component';
     RouterModule.forRoot([
       {
         path: "",
+        component: HomeComponent
+      },
+      {
+        path: ':id',
         component: LogroComponent
       }
     ])

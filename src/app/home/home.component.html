@@ -1,6 +1,8 @@
 <md-list>
   <md-list-item *ngFor="let logro of logros">
-    <h3 md-line>{{logro.title}}</h3>
+    <h3 md-line>
+      <a routerLink="/{{logro.id}}">{{logro.title}}</a>
+    </h3>
     <p md-line>{{logro.description | truncate : 40 }}</p>
   </md-list-item>
 </md-list>
