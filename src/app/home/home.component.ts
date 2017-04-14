@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogrosService, ILogro } from '../services/logros.service';
 
 @Component({
   selector: 'app-home',
@@ -11,32 +12,11 @@ export class HomeComponent implements OnInit {
   logros : ILogro[];
   title : string = "Bienvenido";
 
-  constructor() { }
+  constructor(private logrosService : LogrosService) {
+
+  }
 
   ngOnInit() {
-    this.logros = this.getLogros();
+    this.logros = this.logrosService.all();
   }
-
-  getLogros() : ILogro[] {
-    return [{
-      id: 1,
-      title: "Lorem ipsum Ad dolore",
-      description: "Lorem ipsum Incididunt reprehenderit Duis anim voluptate do occaecat commodo ad amet culpa ut anim in laborum occaecat incididunt dolore labore veniam in."
-    },
-    {
-      id: 2,
-      title: "Lorem ipsum Id."
-    },
-    {
-      id: 3,
-      title: "Lorem ipsum Cupidatat.",
-      description: "Lorem ipsum Cupidatat magna anim dolor adipisicing labore est dolore eu et."
-    }]
-  }
-}
-
-interface ILogro {
-  id: number;
-  title: string;
-  description ?: string;
 }
