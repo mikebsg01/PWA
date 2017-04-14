@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 2,
-      title: "Lorem ipsum Id in irure."
+      title: "Lorem ipsum Id."
     },
     {
       id: 3,
